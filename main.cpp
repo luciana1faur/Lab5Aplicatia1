@@ -14,12 +14,12 @@ double imc;
   
   if (imc < 18.5) 
     cout << "Subponderal. " << endl;
-  if (imc >= 18.5 && imc < 25)
+  else if (imc >= 18.5 && imc < 25)
     cout << "Normoponderal. " << endl;
-  if (imc >= 25 && imc < 30)
-    cout << "Supraponderal. " << endl;
-  if(imc >= 30 && imc < 40)
-    cout << "Obezitate. " << endl;
-  if(imc >= 40)
-    cout << "Obezitate morbida. " << endl;
+    else if (imc >= 25 && imc < 30)
+      cout << "Supraponderal. " << endl;
+      else if(imc >= 30 && imc < 40)
+        cout << "Obezitate. " << endl;
+        else 
+          cout << "Obezitate morbida. " << endl;
 }
