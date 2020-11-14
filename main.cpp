@@ -11,7 +11,9 @@ int main() {
 double imc;
   imc = g/(h*h);
   cout << "Indicele de masa corporala IMC este " << imc << endl;
-  if(imc >= 25){
-    cout << "persoana obeza";
+  if(imc >= 18.5 && imc < 25){
+    cout << "persoana cu greutate normala";
   }
+  else
+  cout << "persoana obeza";
 }
